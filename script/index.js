@@ -1,7 +1,7 @@
 console.log("Hello World");
 
 let firstName = "Indusha";
-let age = "34";
+let age = "33";
 
 console.log(firstName);
 console.log(`My name is ${ firstName} and I am ${age} years old`)
