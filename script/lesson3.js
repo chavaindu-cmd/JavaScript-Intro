@@ -11,4 +11,4 @@ function isValidPassword(password,username) {
 }
 
 console.log(isValidPassword("hello123","indu"));
-console.log(isValidPassword("indu12345" , "indu"))
+console.log(isValidPassword("indu12345" , "indu")) 
