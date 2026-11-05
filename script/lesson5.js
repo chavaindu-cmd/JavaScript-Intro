@@ -41,6 +41,37 @@ const account = {
         console.log("You exited the account");
     }
 };
+
+function atm() 
+{
+    const message = parseFloat(
+        prompt("Select a choice 1.) See balance 2.) Make a deposit 3.) Make a withdrawal 4.) Get account name 5.) Exit")
+    );
+
+    switch (message)
+    {
+        case 1:
+            account.getBalance();
+            break;
+
+        case 2:
+            account.deposit(Number(prompt(`Enter amount`)));
+            break;
+
+        case 3:
+            account.withdrawal(Number(prompt(`Enter amount`)));
+            break;
+
+        case 4:
+            account.getAccountName();
+            break;
+
+        case 5:
+            account.exitAccount();
+            break;
+            
+    }
+}
 account.getAccountName();
 account.getBalance();
 
@@ -53,3 +84,5 @@ account.getBalance();
 account.withdrawal(2000);
 
 account.exitAccount();
+
+atm();
